@@ -3,10 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// styles 在config里面配置了src/assets/styles 这个目录
 // 样式重置
-import './assets/styles/reset.css'
+import 'styles/reset.css'
 // 解决1像素边框的问题
-import './assets/styles/border.css'
+import 'styles/border.css'
+// 引入字体库
+import 'styles/iconfont.css'
 // 引入fastClick，解决点击延迟300毫秒执行的问题
 import fastClick from 'fastclick'
 Vue.config.productionTip = false
