@@ -12,6 +12,12 @@ import 'styles/border.css'
 import 'styles/iconfont.css'
 // 引入fastClick，解决点击延迟300毫秒执行的问题
 import fastClick from 'fastclick'
+
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(VueAwesomeSwiper)
+
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 
