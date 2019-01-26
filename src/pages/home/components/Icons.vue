@@ -104,6 +104,7 @@ export default {
     overflow hidden
     height 0
     padding-bottom 50%  // 高是宽的一半
+    margin-top .1rem
     .icon
       position relative
       overflow hidden
