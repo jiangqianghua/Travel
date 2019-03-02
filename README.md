@@ -47,3 +47,6 @@ http://127.0.0.1:8080/#/
 >npm install stylus-loader --save
 安装轮播图（参考https://github.com/surmon-china/vue-awesome-swiper）
 >npm install vue-awesome-swiper@2.6.7 --save
+
+07 安装axios，请求ajax
+npm install axios --save

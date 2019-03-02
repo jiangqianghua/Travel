@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="(item, index) of recommendList" :key="index">
+      <li class="item border-bottom" v-for="(item, index) of list" :key="index">
         <img class="item-img" :src="item.imgUrl"/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,36 +17,39 @@
 <script>
 export default {
   name: ' HomeRecommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-          title: 'title1',
-          desc: 'desc1'
-        }, {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-          title: 'title1',
-          desc: 'desc2'
-        }, {
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-          title: 'title1',
-          desc: 'desc3'
-        }, {
-          id: '0004',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-          title: 'title1',
-          desc: 'desc4'
-        }, {
-          id: '0005',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-          title: 'title1',
-          desc: 'desc5'
-        }
-      ]
+      // recommendList: [
+      //   {
+      //     id: '0001',
+      //     imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
+      //     title: 'title1',
+      //     desc: 'desc1'
+      //   }, {
+      //     id: '0002',
+      //     imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
+      //     title: 'title1',
+      //     desc: 'desc2'
+      //   }, {
+      //     id: '0003',
+      //     imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
+      //     title: 'title1',
+      //     desc: 'desc3'
+      //   }, {
+      //     id: '0004',
+      //     imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
+      //     title: 'title1',
+      //     desc: 'desc4'
+      //   }, {
+      //     id: '0005',
+      //     imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
+      //     title: 'title1',
+      //     desc: 'desc5'
+      //   }
+      // ]
     }
   }
 }
