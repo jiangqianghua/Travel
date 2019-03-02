@@ -23,7 +23,7 @@ export default {
   data () {
     return {
       swiperOption: {
-        autoplay: false  // 轮播图不自动滚动
+        autoplay: false
       }
       // iconList: [
       //   {
