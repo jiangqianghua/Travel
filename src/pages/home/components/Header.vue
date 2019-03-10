@@ -12,7 +12,7 @@
         {{this.city}}
         <span class="iconfont arrow-icon" >&#xe64a;</span>
       </div>
-    </router-link>
+  </router-link>
   </div>
 
 </template>
